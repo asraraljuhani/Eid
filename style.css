@@ -1,7 +1,14 @@
-@import url("https://fonts.googleapis.com/css2?family=Harmattan&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Harmattan&family=Lateef&display=swap');
+@font-face {
+    font-family: 'Tajawal';
+    src: url('Tajawal ExtraBold Regular.ttf') format('wttfoff'), /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+     url('Tajawal ExtraBold Regular.ttf') format('truetype'); /* Chrome 4+, Firefox 3.5, Opera 10+, Safari 3—5 */
+  } 
 * {
   text-align: center;
-  font-family: "Harmattan", sans-serif;
+  font-family: 'Lateef', cursive;
+  /* font-family: "Tajawal"; */
+  font-size: 20px;
 }
 
 /* .btn-save {
@@ -40,13 +47,13 @@
     border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
   color: #fff;
   cursor: pointer;
-  background-color: #a8323e;
-  border-color: #a8323e;
+  background-color: #B99149;
+  border-color: #B99149;
 }
 .btn-addName{
     box-sizing: border-box;
-    margin: 10px;
-    margin-bottom: 20px;
+    /* margin: 10px; */
+    margin: 20px;
     font-family: inherit;
     overflow: visible;
     text-transform: none;
@@ -64,8 +71,8 @@
       border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
     color: #fff;
     cursor: pointer;
-    background-color: #a8323e;
-    border-color: #a8323e; 
+    background-color: #B99149;
+    border-color: #B99149; 
 }
 canvas {
   border: 1px solid black;
@@ -78,11 +85,12 @@ a:hover{
     text-decoration: none;
 }
 nav{
-    background-color: #f5c095;
+    background-color: #B99149;
 }
 #title{
-    color: #a8323e;
+    color: #21958C;
     margin: 2%;
     font-size: 4rem;
+    font-family: "Harmattan", sans-serif;
 }
 

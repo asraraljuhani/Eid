@@ -7,8 +7,7 @@
       name="viewport"
       content="width=device-width, initial-scale=1, shrink-to-fit=no"
     />
-
-    <!-- Bootstrap CSS -->
+    <link rel="icon" href="images/logo.jpeg">
     <link
       rel="stylesheet"
       href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
@@ -19,17 +18,17 @@
     <title>صمم بطاقة تهنئة</title>
   </head>
   <body dir="rtl">
-    <nav class="navbar navbar-light bg-light">
+    <nav class="navbar navbar-light bg-light ">
       <a class="navbar-brand" href="#">
         <img
-          src="images/eid-day.png"
+          src="images/logo.jpeg"
           width="30"
           height="30"
           class="d-inline-block align-top"
           alt=""
           loading="lazy"
         />
-        بطاقة تهنئة
+        جمعية التطوع الخيرية (فزعة)
       </a>
     </nav>
     <h1 id="title">صمم بطاقتك الخاصة</h1>
@@ -39,49 +38,82 @@
       <div class="col-sm-4 my-auto"></div>
       <div class="col-sm-4 my-auto">
       <input id="name" type="text" name="text" maxlength="85" class="form-control" placeholder="اكتب الاسم هنا" value="" >
-      <button class="btn-addName" onClick="addName()" > أضف أسمك </button>
     </div>
-    <div class="col-sm-4 my-auto"></div>
+    <div class="col-sm-4 my-auto " style="text-align: center;"></div>
+    </div>
   </div>
-
-  <!-- <div class="row h-100">
-    <div class="col-sm-12 my-auto">
-      <button class="btn-addName"> أضف أسمك </button>
+  
+   
+    <div class="row h-100" style="display: block;">
+<!--     
+      <div class="custom-control custom-radio custom-control-inline" style="display: inline;">
+        <h5>الجنس:  </h5>
+       
+        <input type="radio" id="customRadioInline1" name="customRadioInline1" class="custom-control-input">
+        <label class="custom-control-label" for="customRadioInline1">ذكر</label>
+      </div>
+      <div class="custom-control custom-radio custom-control-inline">
+        <label class="custom-control-label" for="customRadioInline2">أنثى</label>
+        <input type="radio" id="customRadioInline2" name="customRadioInline1" class="custom-control-input">
+        
+        
+    </div> -->
+  
+    <div class="custom-control custom-radio custom-control-inline" style="display: inline;">
+       <h5 style="margin-left: 5px;;">الجنس:  </h5> 
+      <input type="radio" id="customRadioInline1" name="customRadioInline1" class="custom-control-input" >
+      <label class="custom-control-label" for="customRadioInline1">ذكر</label>
     </div>
-  </div> -->
-
-
-  <!-- <div class="row h-100">
-    <div class="col-sm-12 my-auto">
+    <div class="custom-control custom-radio custom-control-inline">
+      <input type="radio" id="customRadioInline2" name="customRadioInline1" class="custom-control-input">
+      <label class="custom-control-label" for="customRadioInline2">أنثى</label>
     </div>
-  </div> -->
+
+
+
+
+
+
+
+
+  
+ <div class="row h-100" style="display: block;">
+  <button class="btn-addName" onClick="addName()" > أضف أسمك </button>
+ </div>
+  
 <!-- canvas1 -->
-    <div class="row h-100">
-      <div class="col-sm-12 my-auto">
-        <canvas id="canvas1" width="500px" height="500px"></canvas>
-      </div>
+<div id="img-f">
+  <div class="row h-100">
+    <div class="col-sm-12 my-auto">
+      <canvas id="canvas1" width="296px" height="640px"></canvas>
     </div>
-    <div class="row h-100">
-      <div class="col-sm-12 my-auto">
-        <button class="btn-save">
-          <a download="Eid.jpg" href="" onclick="saveImg1(this);">  تنزيل <i class="fa fa-save"></i></a> 
-         </button>
-      </div>
+  </div>
+  <div class="row h-100">
+    <div class="col-sm-12 my-auto">
+      <button class="btn-save">
+        <a download="Eid.jpg" href="" onclick="saveImg1(this);">  تنزيل <i class="fa fa-save"></i></a> 
+       </button>
     </div>
+  </div>
+</div>
+   
 
 <!-- canvas2 -->
-<div class="row h-100">
-  <div class="col-sm-12 my-auto">
-    <canvas id="canvas2" width="500px" height="500px"></canvas>
+<div id="img-m">
+  <div class="row h-100">
+    <div class="col-sm-12 my-auto">
+      <canvas id="canvas2" width="296px" height="640px"></canvas>
+    </div>
+  </div>
+  <div class="row h-100">
+    <div class="col-sm-12 my-auto">
+      <button class="btn-save">
+         <a download="Eid.jpg" href="" onclick="saveImg2(this);">  تنزيل <i class="fa fa-save"></i></a> 
+        </button>
+    </div>
   </div>
 </div>
-<div class="row h-100">
-  <div class="col-sm-12 my-auto">
-    <button class="btn-save">
-       <a download="Eid.jpg" href="" onclick="saveImg2(this);">  تنزيل <i class="fa fa-save"></i></a> 
-      </button>
-  </div>
-</div>
+
 
 
 
