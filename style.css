@@ -1,0 +1,88 @@
+@import url("https://fonts.googleapis.com/css2?family=Harmattan&display=swap");
+* {
+  text-align: center;
+  font-family: "Harmattan", sans-serif;
+}
+
+/* .btn-save {
+    color: white;
+    border: none;
+    border-radius: 8px;
+    background-color: #A58662;
+    padding: 16px 28px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 24px;
+    margin: 4px 2px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+} */
+
+.btn-save {
+  box-sizing: border-box;
+  margin: 10px;
+  font-family: inherit;
+  overflow: visible;
+  text-transform: none;
+  -webkit-appearance: button;
+  display: inline-block;
+  font-weight: 400;
+  text-align: center;
+  vertical-align: middle;
+  user-select: none;
+  border: 1px solid transparent;
+  padding: 0.375rem 0.75rem;
+  font-size: 1.5rem;
+  line-height: 1.5;
+  border-radius: 0.25rem;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
+    border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  color: #fff;
+  cursor: pointer;
+  background-color: #a8323e;
+  border-color: #a8323e;
+}
+.btn-addName{
+    box-sizing: border-box;
+    margin: 10px;
+    margin-bottom: 20px;
+    font-family: inherit;
+    overflow: visible;
+    text-transform: none;
+    -webkit-appearance: button;
+    display: inline-block;
+    font-weight: 400;
+    text-align: center;
+    vertical-align: middle;
+    user-select: none;
+    border: 1px solid transparent;
+    padding: 0.375rem 0.75rem;
+    line-height: 1.5;
+    border-radius: 0.25rem;
+    transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
+      border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+    color: #fff;
+    cursor: pointer;
+    background-color: #a8323e;
+    border-color: #a8323e; 
+}
+canvas {
+  border: 1px solid black;
+}
+a{
+    color: white;
+}
+a:hover{
+    color: white;
+    text-decoration: none;
+}
+nav{
+    background-color: #f5c095;
+}
+#title{
+    color: #a8323e;
+    margin: 2%;
+    font-size: 4rem;
+}
+
