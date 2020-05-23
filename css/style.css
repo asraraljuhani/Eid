@@ -80,7 +80,13 @@ nav{
 #title{
     color: #21958C;
     margin: 2%;
-    font-size: 4rem;
+    font-size: 1.5rem;
     font-family: "almohanad";
+    margin-top: 5%;;
+}
+#name{
+  display: inline;
+  width: 90%;
+  text-align: center;
 }
 
