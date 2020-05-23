@@ -1,117 +1,93 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1, shrink-to-fit=no"
-    />
-    <link rel="icon" href="images/logo0.png">
-    <link
-      rel="stylesheet"
-      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
-      integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
-      crossorigin="anonymous"/>
-    <script src="https://kit.fontawesome.com/107c424bca.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="style.css" />
-    <title>صمم بطاقة تهنئة</title>
-  </head>
-  <body dir="rtl">
-    <nav class="navbar navbar-light bg-light ">
-      <a class="navbar-brand" href="#">
-        <img
-          src="images/logo0.png"
-          width="30"
-          height="30"
-          class="d-inline-block align-top"
-          alt=""
-          loading="lazy"
-        />
-        جمعية التطوع الخيرية (فزعة)
-      </a>
-    </nav>
-    <h1 id="title">متطوع/ـة أو فريق تطوعي؟ <br /> صمم بطاقتك الخاصة</h1>
-    
-    
-    <div class="row h-100">
-      <div class="col-sm-4 my-auto"></div>
-      <div class="col-sm-4 my-auto">
-      <input id="name" type="text" name="text" maxlength="85" class="form-control" placeholder="اكتب الاسم هنا" value="" >
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <link rel="icon" href="images/logo0.png">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+    integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous" />
+  <script src="https://kit.fontawesome.com/107c424bca.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="css/style.css" />
+  <title>صمم بطاقة تهنئة</title>
+</head>
+
+<body dir="rtl">
+  <nav class="navbar navbar-light bg-light ">
+    <a class="navbar-brand" href="#">
+      <img src="images/logo0.png" width="30" height="30" class="d-inline-block align-top" alt="logo" loading="lazy" />
+      جمعية التطوع الخيرية (فزعة)
+    </a>
+  </nav>
+  <h1 id="title">متطوع/ـة أو فريق تطوعي؟ <br /> صمم بطاقتك الخاصة</h1>
+
+
+  <div class="row h-100">
+    <div class="col-sm-4 my-auto"></div>
+    <div class="col-sm-4 my-auto">
+      <input id="name" type="text" name="text" maxlength="85" class="form-control" placeholder="اكتب الاسم هنا"
+        value="">
     </div>
     <div class="col-sm-4 my-auto " style="text-align: center;"></div>
-    </div>
   </div>
-  
-   
-    <div class="row h-100" style="display: block;">
+
+  <div class="row h-100" style="display: block;">
     <div class="custom-control custom-radio custom-control-inline" style="display: inline;">
-       <h5 style="margin-left: 5px;;">الجنس:  </h5> 
-      <input type="radio" id="customRadioInline1" name="customRadioInline1" class="custom-control-input" >
+      <h5 style="margin-left: 5px;;">الجنس: </h5>
+      <input type="radio" id="customRadioInline1" name="customRadioInline1" class="custom-control-input">
       <label class="custom-control-label" for="customRadioInline1">ذكر</label>
     </div>
     <div class="custom-control custom-radio custom-control-inline">
       <input type="radio" id="customRadioInline2" name="customRadioInline1" class="custom-control-input">
       <label class="custom-control-label" for="customRadioInline2">أنثى</label>
     </div>
+  </div>
+  <div class="row h-100" style="display: block;">
+    <button class="btn-addName" onClick="addName()"> أضف أسمك </button>
+  </div>
 
- <div class="row h-100" style="display: block;">
-  <button class="btn-addName" onClick="addName()" > أضف أسمك </button>
- </div>
-  
-<!-- canvas1 -->
-<div id="img-f">
-  <div class="row h-100">
-    <div class="col-sm-12 my-auto">
-      <canvas id="canvas1" width="591px" height="1280px"></canvas>
+  <!-- canvas1 -->
+  <div id="img-f">
+    <div class="row h-100">
+      <div class="col-sm-12 my-auto">
+        <canvas id="canvas1" width="591" height="1280"></canvas>
+      </div>
     </div>
-  </div>
-  <div class="row h-100">
-    <div class="col-sm-12 my-auto">
-      <button class="btn-save">
-        <a download="Eid.jpg" href="" onclick="saveImg1(this);">  تنزيل <i class="fa fa-save"></i></a> 
-       </button>
-    </div>
-  </div>
-</div>
-   
-
-<!-- canvas2 -->
-<div id="img-m">
-  <div class="row h-100">
-    <div class="col-sm-12 my-auto">
-      <canvas id="canvas2" width="591px" height="1280px"></canvas> 
-    </div>
-  </div>
-  <div class="row h-100">
-    <div class="col-sm-12 my-auto">
-      <button class="btn-save">
-         <a download="Eid.jpg" href="" onclick="saveImg2(this);">  تنزيل <i class="fa fa-save"></i></a> 
+    <div class="row h-100">
+      <div class="col-sm-12 my-auto">
+        <button class="btn-save">
+          <a download="Eid.jpg" href="" onclick="saveImg1(this);"> تنزيل <i class="fa fa-save"></i></a>
         </button>
+      </div>
     </div>
   </div>
-</div>
 
+  <!-- canvas2 -->
+  <div id="img-m">
+    <div class="row h-100">
+      <div class="col-sm-12 my-auto">
+        <canvas id="canvas2" width="591" height="1280"></canvas>
+      </div>
+    </div>
+    <div class="row h-100">
+      <div class="col-sm-12 my-auto">
+        <button class="btn-save">
+          <a download="Eid.jpg" href="" onclick="saveImg2(this);"> تنزيل <i class="fa fa-save"></i></a>
+        </button>
+      </div>
+    </div>
+  </div>
 
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+    integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+    crossorigin="anonymous"></script>
+  <script src="eid2020.js"></script>
+</body>
 
-
-
-
-    <script
-      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
-      integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
-      crossorigin="anonymous"
-    ></script>
-    <script src="eid2020.js"></script>
-  </body>
 </html>
