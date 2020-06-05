@@ -1,6 +1,6 @@
 # Eid Cards :tada:
 
-**An Eid Card generator for Voluntary Charity Association (Fazzah).**
+**An Eid Card generator for [Voluntary Charity Association Fazzah](http://fazzah.org.sa/new/).**
 
 ## Getting started/Demo
 Fellow these steps:
